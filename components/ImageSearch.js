@@ -20,7 +20,7 @@ export default function ImageSearch() {
     formData.append('file', selectedFile)
 
     try {
-      const response = await fetch('http://web-production-40d79.up.railway.app/api/search', {
+      const response = await fetch('https://thriftlens-production.up.railway.app/api/search', {
         method: 'POST',
         body: formData,
       })
