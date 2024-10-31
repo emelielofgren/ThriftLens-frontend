@@ -3,12 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 10px;
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .inputContainer {
@@ -16,48 +11,58 @@
     justify-content: center;
     margin-bottom: 2rem;
     width: 100%;
+    max-width: 600px;
+    gap: 1rem;
 }
 
 .fileInput {
     flex: 1;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    padding: 0.8rem;
+    border: 2px solid #2E7D32;
+    border-radius: 10px;
+    background: white;
 }
 
 .searchButton {
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    background: linear-gradient(45deg, #2E7D32, #43A047);
     color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
 }
 
 .searchButton:hover {
-    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
 }
 
 .results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
+    padding: 2rem 0;
 }
 
 .imageWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.resultImage {
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.resultImage:hover {
-    transform: scale(1.05);
+.imageWrapper:hover {
+    transform: translateY(-5px);
+}
+
+.resultImage {
+    border-radius: 10px;
 }
