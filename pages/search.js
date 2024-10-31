@@ -10,7 +10,7 @@ export default function Search() {
       <Head>
         <title>ThriftLens - Fashion Image Search</title>
         <meta name="description" content="AI-powered fashion image search application" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
       </Head>
 
